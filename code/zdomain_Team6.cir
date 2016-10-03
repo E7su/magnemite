@@ -206,7 +206,7 @@ Grid=36,63
 CBorder=NONE
 
 [Grid Text]
-Text="This circuit illustrates using a Z transform source to represent aþZ-domain transfer function.    This example was derived from aþcircuit presented in the April 11,1996 edition of EDN.  þRun transient and AC analysis."
+Text="This circuit illustrates using a Z transform source to represent aÃ¾Z-domain transfer function.    This example was derived from aÃ¾circuit presented in the April 11,1996 edition of EDN.  Ã¾Run transient and AC analysis."
 Grid=25,19
 CBorder=NONE
 
