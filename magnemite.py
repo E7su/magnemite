@@ -11,7 +11,6 @@ print("Digital Frequency: ", lambda_c)  # цифровая частота
 lambda_s = 2 * math.pi * f_s / F_s
 print("Sampling Frequency: ", lambda_s)  # частота выборки
 
-# 20 * math.log10((1 + omega_s ** (2 * n)) ** 1/2  >= 33.5
 omega_c = math.tan(lambda_s/2) / math.tan(lambda_c/2)
 print("Band Edge: ", omega_c)  # граница полосы затухания
 
