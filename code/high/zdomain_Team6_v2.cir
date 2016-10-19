@@ -201,12 +201,12 @@ ONV=0,16,ZEXP,ZFILTER
 ONV=0,32,CLOCK FREQUENCY,FRs
 
 [Grid Text]
-Text=".DEFINE ZFILTER ((0.129+0.257*POW(z,(-1))+0.129*POW(z,(-2)))/þ(1-0.762*POW(z,(-1))+0.276*POW(z,(-2))))"
+Text=".DEFINE ZFILTER ((0.129+0.257*POW(z,(-1))+0.129*POW(z,(-2)))/�(1-0.762*POW(z,(-1))+0.276*POW(z,(-2))))"
 Grid=36,66
 CBorder=NONE
 
 [Grid Text]
-Text="This circuit illustrates using a Z transform source to represent aÃ¾Z-domain transfer function.    This example was derived from aÃ¾circuit presented in the April 11,1996 edition of EDN.  Ã¾Run transient and AC analysis."
+Text="This circuit illustrates using a Z transform source to represent aþZ-domain transfer function.    This example was derived from aþcircuit presented in the April 11,1996 edition of EDN.  þRun transient and AC analysis."
 Grid=25,19
 CBorder=NONE
 
