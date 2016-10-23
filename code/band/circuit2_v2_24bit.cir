@@ -176,6 +176,7 @@ Digital F Color=#FFFF00
 Digital 1 Color=#FF0000
 Digital X Color=#C0C0C0
 Digital Z Color=#808080
+Window Placement in Transient Analysis=2,3, -1,-1, -8,-31, 78,78,1435,546
 Window Placement in AC Analysis=0,1, -1,-1, -8,-31, 0,0,795,526
 SpiceType=AMBIGUOUS
 Block Select Color=#51F998
@@ -734,12 +735,12 @@ Grid=51,63
 CBorder=NONE
 
 [Grid Text]
-Text=".define b11 -1.73858"
+Text=".define b11 -1.738556"
 Grid=33,61
 CBorder=NONE
 
 [Grid Text]
-Text=".define b12 0.788336"
+Text=".define b12 0.788330"
 Grid=33,63
 CBorder=NONE
 
@@ -754,7 +755,7 @@ Grid=16,59
 CBorder=NONE
 
 [Grid Text]
-Text=".define a20 0.012371"
+Text=".define a20 0.0123596"
 Grid=90,59
 CBorder=NONE
 
@@ -764,17 +765,17 @@ Grid=90,61
 CBorder=NONE
 
 [Grid Text]
-Text=".define a22 -0.0247421"
+Text=".define a22 -0.024719"
 Grid=90,63
 CBorder=NONE
 
 [Grid Text]
-Text=".define b21 -3.63738"
+Text=".define b21 -3.637359"
 Grid=72,61
 CBorder=NONE
 
 [Grid Text]
-Text=".define b22 5.08009"
+Text=".define b22 5.080078"
 Grid=72,63
 CBorder=NONE
 
@@ -789,17 +790,17 @@ Grid=90,65
 CBorder=NONE
 
 [Grid Text]
-Text=".define a24 0.012371"
+Text=".define a24 0.0123596"
 Grid=90,67
 CBorder=NONE
 
 [Grid Text]
-Text=".define b23 -3.23092"
+Text=".define b23 -3.230896"
 Grid=72,65
 CBorder=NONE
 
 [Grid Text]
-Text=".define b24 0.790955"
+Text=".define b24 0.790962"
 Grid=72,67
 CBorder=NONE
 
@@ -890,7 +891,7 @@ FONT=Yes
 
 [Section]
 Index=0
-Name="circuit2_v2"
+Name="circuit2_v2_12bit"
 Type=Main
 Enable=True
 CurrentPage 0=0
@@ -911,8 +912,9 @@ Name=Main
 Scale 0=1
 Scale 1=1
 Scale 2=1
+SB 3=134,167
 Scale 3=1
-Grid=133,38
+Grid=128,60
 
 [Page]
 Index=1
@@ -957,6 +959,7 @@ Len=0
 
 
 [Transient]
+Window Placement=2,3, -1,-1, -8,-31, 78,78,1435,546
 Font=Height=-15,FStyle=0,Color=#0000FF,Name=Arial
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
@@ -1004,6 +1007,13 @@ FFT_IncludeDCHarmonic=False
 FFT_AutoScale_Harmonics="10"
 PrinterAutoTile=No
 PrinterBlackBorder=No
+MonMaxShow=3
+MonPageWidth=66
+MonPlotWidth=21
+MonExprXWidth=142
+MonExprYWidth=260
+MonRangeXWidth=90
+MonRangeYWidth=90
 AnimateWait=0
 AnimateWaitTime=500
 Save_For_Future=No
@@ -1336,7 +1346,7 @@ SFmtY=3
 [Limits]
 Analysis=AC
 FRange=36k,1
-NPts=10000
+NPts=1000
 Temp=27
 MaxChng=5
 NInput=NONE
