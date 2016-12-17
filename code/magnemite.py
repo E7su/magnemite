@@ -91,7 +91,6 @@ dB = (20 * math.log10(max_out / max_in))
 print('dB: ', str(dB))
 
 if t <= (k_period / F_in):
-    print('=====')
     stl.use('ggplot')
     plt.plot(sp_t, sp_y_in, 'b')
     plt.plot(sp_t, sp_y_out, 'c')
