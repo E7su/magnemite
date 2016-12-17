@@ -1,5 +1,6 @@
 import math
 import matplotlib.pyplot as plt
+import matplotlib.style as stl
 
 max_in = 0
 max_out = 0
@@ -58,7 +59,7 @@ for i in range(prec * round(k_period * Fd / F_in)):
 
     sp_t.append(t * 1000)
     sp_y_in.append(y_in)
-    
+
     if (i % prec) == 0:
         z02 = z01
         z01 = temp0
@@ -75,27 +76,23 @@ for i in range(prec * round(k_period * Fd / F_in)):
         temp2 = cascade1 - b21 * z21 - b22 * z22
         cascade2 = a20 * temp2 + a21 * z21 + a22 * z22
 
-
         y_out = cascade2
         sp_y_out.append(y_out)
-    
+
     else:
-	    sp_y_out.append(y_out)
+        sp_y_out.append(y_out)
 
     if (max_in <= y_in) and (i > prec * round((k_period - 1) * Fd / F_in)):
         max_in = y_in
     if (max_out <= y_out) and (i > prec * round((k_period - 1) * Fd / F_in)):
         max_out = y_out
-    
-if t <= (k_period / F_in):
-    print('=====')
-    plt.plot(sp_t, sp_y_in, 'b')
-    plt.plot(sp_t, sp_y_out, 'c')
-    plt.show()
 
 dB = (20 * math.log10(max_out / max_in))
 print('dB: ', str(dB))
 
-# k_period = 5
-# F_in = 6400
-# Fd = 2 * 3 * 11300
+if t <= (k_period / F_in):
+    print('=====')
+    stl.use('ggplot')
+    plt.plot(sp_t, sp_y_in, 'b')
+    plt.plot(sp_t, sp_y_out, 'c')
+    plt.show()
