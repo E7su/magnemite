@@ -147,10 +147,8 @@ for i in range(prec * round(k_period * Fd / F_in)):
     if (max_out <= y_out) and (i > prec * round((k_period - 1) * Fd / F_in)):
         max_out = y_out
 
-# dB = (20 * math.log10(max_out / max_in))
-#
-# print('dB: ', str(dB))
-
+dB = (20 * math.log10(max_out / max_in))
+print('dB: ', str(dB))
 
 stl.use('ggplot')
 plt.plot(sp_t, sp_y_in, 'b')
